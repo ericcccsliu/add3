@@ -52,6 +52,7 @@ export const Iteration = props => {
                   }}
                   focusBorderColor={props.hardMode ? 'red' : 'blue'}
                   key={index}
+                  isDisabled={result[index] !== -1}
                 >
                   <PinInputField
                     size="lg"
