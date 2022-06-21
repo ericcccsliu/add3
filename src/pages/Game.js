@@ -40,6 +40,7 @@ export const Game = () => {
   const numberInput = useCallback(inputElement => {
     if (inputElement) {
       inputElement.focus();
+      inputElement.click(); 
     }
   }, []);
 
