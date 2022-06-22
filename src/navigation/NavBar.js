@@ -18,19 +18,24 @@ export const NavBar = () => {
           main menu
         </Button>
       </Link>
+      <Link to="/instructions">
+        <Button
+          colorScheme="blue"
+          variant="ghost"
+          padding="5px"
+          isDisabled={location.pathname === '/instructions'}
+        >
+          instructions
+        </Button>
+      </Link>
       <Link to="/about">
         <Button
           colorScheme="blue"
           variant="ghost"
-          padding='5px'
+          padding="5px"
           isDisabled={location.pathname === '/about'}
         >
           about
-        </Button>
-      </Link>
-      <Link to="/instructions">
-        <Button colorScheme="blue" variant="ghost" padding="5px" isDisabled={location.pathname === '/instructions'}>
-          instructions
         </Button>
       </Link>
     </HStack>
