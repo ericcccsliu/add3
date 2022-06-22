@@ -75,7 +75,7 @@ export const Iteration = props => {
   }
   if (props.curr === 9) {
     if (!intArraysEqual(result, ans)) {
-      return <Navigate to={"/gameOver/?score=" + (props.score - 1)} replace />;
+      return <Navigate to={"/gameOver/?score=" + (props.score - 1) + "&prompt=" + (props.number) + "&input=" + (result) + "&ans=" + (ans)} replace />;
     }
     return (
       <FadeIn wrapperTag={VStack}>
