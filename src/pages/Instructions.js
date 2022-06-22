@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { VStack, HStack, Heading, Text, Box } from '@chakra-ui/layout';
+import { VStack, HStack, Heading, Text} from '@chakra-ui/layout';
 
 export const Instructions = () => {
   return (
